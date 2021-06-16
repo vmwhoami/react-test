@@ -18,6 +18,5 @@ const Layout = ({ children }) => {
 
 Layout.propTypes = {
   children: PropTypes.instanceOf(Object).isRequired,
-
 };
 export default Layout;
