@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useSelector } from 'react-redux';
 import Layout from '../components/layout';
+import SearchInput from '../components/searchInput';
 
 const Home = () => {
   const [search, setSearch] = useState('');
@@ -12,10 +13,7 @@ const Home = () => {
   };
   return (
     <Layout>
-      <form>
-        <input type="text" name="search" value={search} onChange={handleChange} />
-      </form>
-
+      <SearchInput search={search} handleChange={handleChange} />
       {data && data.filter(el => el.toLowerCase().includes(search.toLowerCase()))
         .map(element => <h2 key={theKey()}>{element}</h2>)}
     </Layout>
