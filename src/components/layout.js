@@ -8,7 +8,7 @@ const Layout = ({ children }) => {
   useEffect(() => {
     dispatch(getData());
   }, []);
-  console.log('Reached this part');
+
   return (
     <div className="container">
       {children}
