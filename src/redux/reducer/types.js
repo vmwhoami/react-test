@@ -1,4 +1,4 @@
 const GET_DATA = 'GET_DATA';
 const DATA_ERROR = 'DATA_ERROR';
-
-export { GET_DATA, DATA_ERROR };
+const SEARCH = 'SEARCH';
+export { GET_DATA, DATA_ERROR, SEARCH };
