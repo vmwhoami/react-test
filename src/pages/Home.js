@@ -7,7 +7,8 @@ const Home = () => {
   const theKey = () => Math.random().toString(36).slice(2, 7);
   return (
     <Layout>
-      {data && data.map(element => <h2 key={theKey()}>{element}</h2>)}
+      {data && data.filter(el => el.toLowerCase().includes('ett'))
+        .map(element => <h2 key={theKey()}>{element}</h2>)}
     </Layout>
   );
 };
