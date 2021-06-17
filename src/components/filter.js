@@ -2,20 +2,21 @@
 /** @jsx jsx */
 import { jsx } from '@emotion/react';
 import PropTypes from 'prop-types';
+import Element from './element';
 
 const Filtering = ({ data, search }) => {
   const theKey = () => Math.random().toString(36).slice(2, 7);
   return (
     <div
       css={{
-        backgroundColor: 'hotpink',
-        '&:hover': {
-          color: 'lightgreen',
-        },
+        maxWidth: '40%',
+        display: 'flex',
+        flexDirection: 'column',
+        margin: '0 auto',
       }}
     >
       {data.filter(el => el.toLowerCase().includes(search.toLowerCase()))
-        .map(element => <h2 key={theKey()}>{element}</h2>)}
+        .map(element => <Element key={theKey()} element={element} />)}
     </div>
   );
 };

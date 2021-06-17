@@ -1,11 +1,41 @@
-import React from 'react';
+/** @jsxRuntime classic */
+/** @jsx jsx */
+import { jsx } from '@emotion/react';
 import PropTypes from 'prop-types';
 
 const SearchInput = ({ search, handleChange, handleSubmit }) => (
-  <form onSubmit={handleSubmit}>
-    <input type="text" name="search" value={search} onChange={handleChange} />
-    <input type="submit" value="Submit" />
-  </form>
+  <div
+    css={{
+
+      maxWidth: '40%',
+      margin: '10px auto',
+    }}
+  >
+    <form onSubmit={handleSubmit}>
+      <input
+        css={{
+          border: '1px solid #dddddddd',
+          borderTopLeftRadius: '5px',
+          borderBottomLeftRadius: '5px',
+          padding: '15px',
+        }}
+        type="text"
+        name="search"
+        value={search}
+        onChange={handleChange}
+      />
+      <input
+        css={{
+          border: '1px solid #dddddddd',
+          borderTopRightRadius: '5px',
+          borderBottomRightRadius: '5px',
+          padding: '15px',
+        }}
+        type="submit"
+        value="Search"
+      />
+    </form>
+  </div>
 );
 
 SearchInput.propTypes = {
