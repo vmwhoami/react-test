@@ -6,14 +6,19 @@ import PropTypes from 'prop-types';
 const SearchInput = ({ search, handleChange, handleSubmit }) => (
   <div
     css={{
-
       maxWidth: '40%',
       margin: '10px auto',
     }}
   >
-    <form onSubmit={handleSubmit}>
+    <form
+      css={{
+        display: 'flex',
+      }}
+      onSubmit={handleSubmit}
+    >
       <input
         css={{
+          flex: '1 1 auto',
           border: '1px solid #dddddddd',
           borderTopLeftRadius: '5px',
           borderBottomLeftRadius: '5px',
@@ -30,6 +35,8 @@ const SearchInput = ({ search, handleChange, handleSubmit }) => (
           borderTopRightRadius: '5px',
           borderBottomRightRadius: '5px',
           padding: '15px',
+          textTransform: 'uppercase',
+          cursor: 'pointer',
         }}
         type="submit"
         value="Search"

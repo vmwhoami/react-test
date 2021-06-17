@@ -6,15 +6,14 @@ import PropTypes from 'prop-types';
 const Element = ({ element }) => (
   <div
     css={{
-
       textTransform: 'uppercase',
     }}
   >
     <p
       css={{
-        background: 'red',
+        background: '#EFEFEF',
         marginTop: '5px',
-        padding: '10px ',
+        padding: '10px 20px',
       }}
 
     >
