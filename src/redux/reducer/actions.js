@@ -1,15 +1,14 @@
 import axios from 'axios';
 import { GET_DATA, DATA_ERROR, SEARCH } from './types';
 
-const getDataError = err => ({
-  type: DATA_ERROR,
-  payload: err,
-});
 const getData = data => ({
   type: GET_DATA,
   payload: data,
 });
-
+const getDataError = err => ({
+  type: DATA_ERROR,
+  payload: err,
+});
 const setSearch = str => ({
   type: SEARCH,
   payload: str,

@@ -17,16 +17,24 @@ const SearchResult = () => {
   }, []);
   return (
     <Layout>
-      <Link
-        css={{
-          maxWidth: '40%',
-          backgroundColor: 'red',
-          padding: '20px',
-          margin: '10px auto',
-        }}
-        to="/"
-      >
-        Back to search
+      <Link to="/">
+        <div
+          css={{
+            width: '40%',
+            textTransform: 'uppercase',
+            textAlign: 'center',
+            letterSpacing: '5px',
+            fontWeight: '500',
+            backgroundColor: '#7e8180',
+            padding: '20px',
+            margin: '0 auto',
+            color: 'white',
+          }}
+
+        >
+          Back to search
+        </div>
+
       </Link>
       {data && <Filter data={data} search={search} />}
     </Layout>

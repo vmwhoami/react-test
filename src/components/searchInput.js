@@ -31,12 +31,16 @@ const SearchInput = ({ search, handleChange, handleSubmit }) => (
       />
       <input
         css={{
-          border: '1px solid #dddddddd',
+          border: '1px solid #7e8180',
+          backgroundColor: '#7e8180',
           borderTopRightRadius: '5px',
           borderBottomRightRadius: '5px',
+          letterSpacing: '5px',
           padding: '15px',
           textTransform: 'uppercase',
           cursor: 'pointer',
+          color: 'white',
+          fontWeight: '500',
         }}
         type="submit"
         value="Search"
