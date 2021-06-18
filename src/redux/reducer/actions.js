@@ -23,4 +23,4 @@ const getAllData = () => async dispatch => {
   });
 };
 
-export { getAllData, setSearch };
+export { getAllData, setSearch, getData };
