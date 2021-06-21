@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders Element correctly 1`] = `
+<div
+  className="css-uuys58-Element"
+>
+  <p
+    className="css-t749mm-Element"
+  >
+    element
+  </p>
+</div>
+`;
