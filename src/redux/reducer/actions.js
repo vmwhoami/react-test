@@ -18,9 +18,11 @@ const getAllData = () => async dispatch => {
   const url = 'https://victoria-f9da0-default-rtdb.europe-west1.firebasedatabase.app/';
   axios.get(`${url}dataset.json`).then(data => {
     dispatch(getData(data));
+    return data;
   }).catch(err => {
     dispatch(getDataError(err));
+    return err;
   });
 };
 
-export { getAllData, setSearch, getData };
+export { getAllData, setSearch };
